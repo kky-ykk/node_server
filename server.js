@@ -1,6 +1,8 @@
 const express=require('express');
 const db=require("./db");
 
+require("dotenv").config();
+
 const Person=require("./models/person");
 
 let app=express();
@@ -35,6 +37,8 @@ const route=require("./route/routerPerson");
 
 app.use("/person",route);
 
-app.listen(3000,()=>{
+
+const PORT=process.env.PORT;
+app.listen(PORT,()=>{
     console.log("server is listending on port :",3000);
 });

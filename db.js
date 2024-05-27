@@ -1,12 +1,17 @@
 
 const mongoose = require('mongoose');
+require("dotenv").config();
 
 //mongodb url
-const mongoURL="mongodb://localhost:27017/student";
+// const mongoURL="mongodb://localhost:27017/student";
+// const mongoURL="mongodb+srv://kishan:Root123@cluster0.uz4q9g0.mongodb.net/";
 
+
+const MONGODB_LOCAL=process.env.MONGODB_URL_LOCAL;
+const MONGODB_REMOTE=process.env.MONGODB_URL_REMOTE;
 
 //set up mongoDB connection
-mongoose.connect(mongoURL,{
+mongoose.connect(MONGODB_REMOTE,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
