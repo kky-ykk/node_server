@@ -38,7 +38,7 @@ const route=require("./route/routerPerson");
 app.use("/person",route);
 
 
-const PORT=process.env.PORT;
+const PORT=process.env.PORT || 3000;
 app.listen(PORT,()=>{
     console.log("server is listending on port :",3000);
 });
