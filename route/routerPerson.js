@@ -4,6 +4,9 @@ const route=express.Router();
 
 const Person=require("../models/person");
 
+require("dotenv").config();
+
+
 route.get("/:workType",async (req,res)=>{
     
     try{
