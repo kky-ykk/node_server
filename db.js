@@ -7,7 +7,7 @@ require("dotenv").config();
 // const mongoURL="mongodb+srv://kishan:Root123@cluster0.uz4q9g0.mongodb.net/";
 
 
-const MONGODB_LOCAL=process.env.MONGODB_URL_LOCAL;
+// const MONGODB_LOCAL=process.env.MONGODB_URL_LOCAL;
 const MONGODB_REMOTE=process.env.MONGODB_URL_REMOTE;
 
 //set up mongoDB connection
